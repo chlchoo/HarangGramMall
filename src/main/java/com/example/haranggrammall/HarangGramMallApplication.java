@@ -9,5 +9,4 @@ public class HarangGramMallApplication {
     public static void main(String[] args) {
         SpringApplication.run(HarangGramMallApplication.class, args);
     }
-
 }
