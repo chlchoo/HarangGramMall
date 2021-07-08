@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class HelloController {
     /*
-    1. 화면에 helloworld가 출력됩니다.
+    1. 화면에 helloworld가 출력
      */
     @GetMapping(value = "/helloworld/string")
     @ResponseBody
@@ -17,7 +17,7 @@ public class HelloController {
         return "helloworld";
     }
     /*
-    2. 화면에 {message: "helloworld"} 라고 출s력됩니다.
+    2. 화면에 {message: "helloworld"} 라고 출력
      */
     @GetMapping(value = "/helloworld/json")
     @ResponseBody
@@ -31,5 +31,6 @@ public class HelloController {
     @Getter
     public static class Hello {
         private String message;
+
     }
 }
