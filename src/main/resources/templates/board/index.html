@@ -18,10 +18,10 @@
     </thead>
     <tbody>
     <tr>
-      <td>1</td>
-      <td>테스트 제목 입니다.</td>
-      <td>최지연</td>
-      <td>2021.07.08</td>
+      <td><span th:text="*{no}"></span></td>
+      <td><span th:text="*{title}"></span></td>
+      <td><span th:text="*{writer}"></span></td>
+      <td><span th:text="${#temporals.format(board.updateTime, 'yyyy-MM-dd HH:mm')}"></span></td>
     </tr>
     </tbody>
   </table>
