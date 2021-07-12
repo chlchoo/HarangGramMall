@@ -18,9 +18,9 @@
     </thead>
     <tbody>
     <tr>
-      <td><span th:text="*{no}"></span></td>
-      <td><span th:text="*{title}"></span></td>
-      <td><span th:text="*{writer}"></span></td>
+      <td><span th:text="*{board.no}"></span></td>
+      <td><span th:text="*{board.title}"></span></td>
+      <td><span th:text="*{board.writer}"></span></td>
       <td><span th:text="${#temporals.format(board.updateTime, 'yyyy-MM-dd HH:mm')}"></span></td>
     </tr>
     </tbody>
